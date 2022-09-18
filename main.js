@@ -1,22 +1,18 @@
 
-let num1 = Number(prompt("Ingrese el primer número"));
-let num2 = Number(prompt("Ingrese el segundo número"));
-let num3 = Number(prompt("Ingrese el tercer número"));    
-    if (num1 > num2 && num1 > num3) {  
-        alert("El número " + num1 + " es mayor qué " + num2 + " y " + num3 );
+let elegirfigu = prompt("A qué figura le desea calcular el área: " + "\n" + 
+                        "¿Triangulo o Cirulo?" + "\n" +
+                        "Escriba T para Triangulo." + "\n" + 
+                        "Escriba C para Circulo.");
+    if (elegirfigu === "T") {  
+        let base = Number(prompt("Ingrese la base del triangulo"));
+        let altura = Number(prompt("Ingrese la altura del triangulo"));
+        let areaTr =  base * altura / 2;
+            alert("El área del triangulo es de " + areaTr);
     }
-    else if(num1 < num2 && num1 < num3) {
-        alert("El número " + num1 + " es menor qué " + num2 + " y " + num3);
-    }   
-    else if (num1 === num2 && num1 === num3) {      
-        alert("El número " + num1 + " es igual qué " + num2 + " y " + num3 );
-    }
-
-    else if(num2 > num1 && num2 > num3) {
-        alert("El número " + num2 + " es mayor qué " + num1 + " y " + num3);
-    }   
-    else if(num3 > num1 && num3 > num2) {
-        alert("El número " + num3 + " es mayor qué " + num1 + " y " + num2);  
+    else if (elegirfigu === "C") {  
+        let radio = Number(prompt("Ingrese el radio del circulo"));
+        let areaCir =  Math.PI * radio * radio;
+            alert("El área del circulo es de " + areaCir);
     }
 
 
