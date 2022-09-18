@@ -1,11 +1,16 @@
 
-let num = Number(prompt("Ingrese un número"));
-    if (num < 100 ) {
-        alert("El número " + num + " es positivo y menor a 100");
+let num1 = Number(prompt("Ingrese el primer número"));
+let num2 = Number(prompt("Ingrese el segundo número"));
+let num3 = Number(prompt("Ingrese el tercer número"));    
+    if (num1 > num2 && num1 > num3 ) {
+        alert("El número " + num1 + " es mayor qué " + num2 + " y " + num3 );
 }
-    else if (num < 0){
-        alert("El número " + num + " es negativo y menor que 100 ")
+    else if (num2 > num1 && num2 > num3) {
+        alert("El número " + num2 + " es mayor qué " + num1 + " y " + num3);
     }
+    else {
+        alert("El número " + num3 + " es mayor qué " + num1 + " y " + num2);    
+    } 
     
        
 
