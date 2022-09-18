@@ -1,12 +1,11 @@
 
-let lado1 = Number(prompt("Ingrese el primer lado"));
-let lado2 = Number(prompt("Ingrese el segundo lado"));
-    if (lado1 > 0 && lado2 > 0) {  
-        let area =  lado1 * lado2;
-            alert("El área del rectángulo es de " + area);
+let temperatura = Number(prompt("Ingrese su temperatura"));
+let presion = Number(prompt("Ingrese su presión"));
+    if (temperatura > 200 || presion > 100 ) { 
+            alert("Alarma");
     }
     else {  
-            alert("Si quiere sacar el área los lados deben ser positivos bb");
+            alert("Normal");
     }
 
 
