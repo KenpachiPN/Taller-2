@@ -1,13 +1,19 @@
 
-let pago = Number(prompt("Ingrese el dinero que pagó el restaurante"));
-    if (pago > 130 ) { 
-        let descuento = pago * 0.15;
-        let pagototal   = pago - descuento;
-            alert("El restaurante Don Camarón recibió un descuento del 15% por compras mayores a $130 mil pesos. " + "\n" +
-                  "Así que en total deberá pagar: $" + pagototal+ " mil pesos." );
+let rol = prompt("Ingrese su rol en la empresa para saber su pago." + "\n" +
+                 "Ingrese P si es empleado de planta." + "\n" + 
+                 "Ingrese A si es empleado administrativo.");
+    if (rol === "P" ) { 
+        let hortrab = Number(prompt("Ingrese las horas que trabajó"));
+        let hora = 20.000;
+        let sueldo =  hortrab * hora;
+            alert("Su sueldo por ser empleado de planta y trabajar " + hortrab + " horas es de: $" + sueldo + " mil pesos" ); 
     }
-    else {  
-            alert("El restaurante Don Camarón debe pagar: $" + pago + " mil pesos.");
+    else if(rol === "A") {  
+        let hortrab = Number(prompt("Ingrese las horas que trabajó"));
+        let hora = 10.000;
+        let sueldo =  hortrab * hora;
+            alert("Su sueldo por ser empleado administrativo y trabajar " + hortrab + " horas es de: $" + sueldo + " mil pesos");
+
     }
 
 
