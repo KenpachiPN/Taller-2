@@ -1,5 +1,5 @@
 * {
-    background: lightcyan;
+    background: lightgreen;
     font-family: 'Cairo', sans-serif;
 
 }
@@ -7,6 +7,6 @@
 h1 {
     text-align: center;
     font-size: 1.4em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
